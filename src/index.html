@@ -3,14 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="./css/reset.css">
     <title>Vite App</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
+    <header>
+      <div class="header">
+        <div class="container">
+            <figure class="mx-5 mb-4">
+              <img src="./img/logo.svg" alt="nucleus logo" class="h-50 w-50">
+            </figure>
+            <nav class="nav flex-column">
+              <a class="nav-link text-center py-1" aria-current="page" href="#">¿Qué es?</a>
+              <a class="nav-link text-center py-1" href="#">¿Cómo funciona?</a>
+              <a class="nav-link text-center py-1" href="#">Precios</a>
+              <a class="nav-link text-center py-1" href="#">Experiencias</a>
+            </nav>
+        </div>
+        <div class="container d-flex flex-column align-items-center mt-4">
+          <h1 class="text-center">Recibe y realiza pagos en tu celular con nucleus</h1>
+          <button class="btn btn-primary mt-5" type="button">Button</button>
+        </div>
+        <div class="container px-3">
+          <figure>
+            <img src="./img/app_1.svg" alt="Vista previa de la app">
+          </figure>
+        </div>
+      </div>
+    </header>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
