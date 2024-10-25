@@ -3,34 +3,247 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css">
     <title>Vite App</title>
   </head>
   <body>
     <header>
       <div class="header">
-        <div class="container">
-            <figure class="mx-5 mb-4">
-              <img src="./img/logo.svg" alt="nucleus logo" class="h-50 w-50">
+        <div class="container div-header">
+          <div class="d-lg-flex justify-content-lg-between">
+            <figure class="mx-auto mb-4 m-lg-0" style="width: 150px;">
+              <img src="./img/logo.svg" alt="nucleus logo">
             </figure>
-            <nav class="nav flex-column">
-              <a class="nav-link text-center py-1" aria-current="page" href="#">¿Qué es?</a>
-              <a class="nav-link text-center py-1" href="#">¿Cómo funciona?</a>
-              <a class="nav-link text-center py-1" href="#">Precios</a>
-              <a class="nav-link text-center py-1" href="#">Experiencias</a>
+            <nav class="nav flex-column flex-lg-row">
+              <a class="nav-link text-center py-1 text-cl-primary-400 text-color-white" aria-current="page" href="#que-es">¿Qué es?</a>
+              <a class="nav-link text-center py-1 text-cl-primary-400 text-color-white" href="#como-funciona">¿Cómo funciona?</a>
+              <a class="nav-link text-center py-1 text-cl-primary-400 text-color-white" href="#precios">Precios</a>
+              <a class="nav-link text-center py-1 text-cl-primary-400 text-color-white" href="#experiencias">Experiencias</a>
             </nav>
+          </div>
         </div>
-        <div class="container d-flex flex-column align-items-center mt-4">
-          <h1 class="text-center">Recibe y realiza pagos en tu celular con nucleus</h1>
-          <button class="btn btn-primary mt-5" type="button">Button</button>
-        </div>
-        <div class="container px-3">
-          <figure>
-            <img src="./img/app_1.svg" alt="Vista previa de la app">
-          </figure>
+        <div class="d-lg-flex gap-5">
+          <div class="container d-flex flex-column align-items-center mt-4 col-lg-6 justify-content-lg-center align-items-lg-start">
+            <p class="text-center display-4 fw-bolder text-lg-start">Recibe y realiza pagos en tu celular con nucleus</p>
+            <button 
+              class="btn btn-primary my-5 rounded-0 py-3 bg-cl-primary-400 border-0 align-items-lg-start" style="max-width: 50%;" type="button">
+              Obtener Cuenta
+            </button>
+            <button 
+              class="btn btn-primary d-none d-lg-flex my-5 rounded-0 py-3 bg-cl-primary-400 border-0 align-items-lg-start" style="max-width: 50%;" type="button">
+              Contactanos
+            </button>
+          </div>
+          <div class="container px-3 col-lg-6">
+            <figure class="mt-5 mt-lg-0 app-1">
+              <img src="./img/app_1.svg" alt="Vista previa de la app">
+            </figure>
+          </div>
         </div>
       </div>
     </header>
+    <main class="container que-es" id="que-es">
+      <h1 class="text-center mb-5 fw-bolder display-4">¿Qué es?</h1>
+      <div class="d-lg-flex gap-3">
+        <div class="d-flex flex-column align-items-center justify-content-lg-center gap-5 col-lg-8 order-2">  
+          <div class="card shadow-lg border-0 w-100 rounded-0" style="width: 18rem;">
+            <div class="card-body py-4">
+              <h5 class="card-title fw-bolder text-center">Fácil</h5>
+              <p class="card-text text-center">
+                Crea una cuenta, envía tu documentación y comienza a utilizar nucleus en un par de horas
+              </p>
+            </div>
+          </div>
+          <div class="card shadow-lg border-0 w-100 rounded-0" style="width: 18rem;">
+            <div class="card-body py-4">
+              <h5 class="card-title fw-bolder text-center">Seguro</h5>
+              <p class="card-text text-center">Por su tecnología digital nucleus es imposible de hackear o robar</p>
+            </div>
+          </div>
+          <div class="card shadow-lg border-0 w-100 rounded-0" style="width: 18rem;">
+            <div class="card-body py-4">
+              <h5 class="card-title fw-bolder text-center">Administrable</h5>
+              <p class="card-text text-center">Añade o transfiere fondos a tu banco, añade limites o controla tus gastos</p>
+            </div>
+          </div>
+        </div>
+        <figure class="mt-5 mt-lg-2 d-none d-lg-flex col-lg-4 order-1">
+          <img src="./img/app_2.svg" alt="visualización app" class="app-2">
+        </figure>
+      </div>
+    </main>
+    <section class="seguro bg-cl-primary-400" id="como-funciona">
+      <div class="mt-5 container">
+        <h2 class="text-center mb-5 fw-bolder text-white display-4">Nucleus es seguro</h2>
+        <div class="d-lg-flex gap-4">
+          <div class="d-flex flex-column align-items-center justify-content-lg-center gap-5 col-lg-6">
+            <div class="card border-0 shadow-lg w-100 rounded-0">
+              <div class="card-body text-center py-4">
+                Nucleus es seguro e imposible de clonar
+              </div>
+            </div>
+            <div class="card border-0 shadow-lg w-100 rounded-0">
+              <div class="card-body text-center py-4">
+                Utiliza tu cara o tu dedo para confirmar un deposito o registrar una cuenta
+              </div>
+            </div>
+            <div class="card border-0 shadow-lg w-100 rounded-0">
+              <div class="card-body text-center py-4">
+                Paga en un establecimiento con una tarjeta de crédito que se desactiva una vez
+                que has hecho tu compraThis is some text within a card body
+              </div>
+            </div>
+          </div>
+          <figure class="mt-5 mt-lg-0 col-lg-6 seguridad">
+            <img src="./img/seguridad.png" alt="tarjetas y candados">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="comisiones" id="precios">
+      <div class="container">
+        <h2 class="text-center fw-bolder my-5 display-4">Comisiones</h2>
+        <div class="d-lg-flex gap-4">
+          <div class="d-lg-flex flex-lg-column justify-content-lg-center col-lg-6">
+            <p class="text-center fw-bolder">Mientras más veces utilices nucleus, menos pagas</p>
+            <div class="d-flex flex-column align-items-center gap-5">
+              <div class="card shadow-lg border-0 w-100 rounded-0 py-4" style="width: 18rem;">
+                <div class="card-body py-4">
+                  <h5 class="card-title fw-bolder text-center display-3 text-cl-primary-400">3%</h5>
+                  <p class="card-text text-center">de todas tus transacciones si tus movimientos son menores a $999 USD.</p>
+                </div>
+              </div>
+              <div class="card shadow-lg border-0 w-100 rounded-0 py-4" style="width: 18rem;">
+                <div class="card-body py-4">
+                  <h5 class="card-title fw-bolder text-center display-3 text-cl-primary-400">2.5%</h5>
+                  <p class="card-text text-center">de todas tus transacciones si tus movimientos son mayores a $999 USD.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figure class="mt-5 mt-lg-0 mb-0 col-lg-6">
+            <img src="./img/app_3.svg" alt="visualización de la app" class="app-3">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="testimonios" id="experiencias">
+      <div class="container py-5">
+        <h2 class="text-white text-center py-5 fw-bolder display-4">Testimoniales</h2>
+        <div class="d-lg-flex">
+          <div class="col-lg-6">
+            <div class="d-flex flex-column align-items-center gap-4">
+              <div class="card border-0 rounded-0 py-4">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <div class="d-inline-flex gap-3">
+                      <figure>
+                        <img src="./img/comilla.png" alt="">
+                      </figure>
+                      <p>Excelente app, muy sencillo de manejar y enviar dinero</p>
+                    </div>
+                    <footer class="blockquote-footer text-end pt-4 fw-bolder text-cl-primary-400">
+                      Juan De la torre
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="card border-0 rounded-0 py-4">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <div class="d-inline-flex gap-3">
+                      <figure>
+                        <img src="./img/comilla.png" alt="">
+                      </figure>
+                      <p>Excelente app, muy sencillo de manejar y enviar dinero</p>
+                    </div>
+                    <footer class="blockquote-footer text-end pt-4 fw-bolder text-cl-primary-400">
+                      Juan De la torre
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="card border-0 rounded-0 py-4">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <div class="d-inline-flex gap-3">
+                      <figure>
+                        <img src="./img/comilla.png" alt="">
+                      </figure>
+                      <p>Excelente app, muy sencillo de manejar y enviar dinero</p>
+                    </div>
+                    <footer class="blockquote-footer text-end pt-4 fw-bolder text-cl-primary-400">
+                      Juan De la torre
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="col-lg-6">
+            <div class="d-flex flex-column align-items-center gap-4">
+              <div class="card border-0 rounded-0 py-4">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <div class="d-inline-flex gap-3">
+                      <figure>
+                        <img src="./img/comilla.png" alt="">
+                      </figure>
+                      <p>Excelente app, muy sencillo de manejar y enviar dinero</p>
+                    </div>
+                    <footer class="blockquote-footer text-end pt-4 fw-bolder text-cl-primary-400">
+                      Juan De la torre
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="card border-0 rounded-0 py-4">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <div class="d-inline-flex gap-3">
+                      <figure>
+                        <img src="./img/comilla.png" alt="">
+                      </figure>
+                      <p>Excelente app, muy sencillo de manejar y enviar dinero</p>
+                    </div>
+                    <footer class="blockquote-footer text-end pt-4 fw-bolder text-cl-primary-400">
+                      Juan De la torre
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="card border-0 rounded-0 py-4">
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <div class="d-inline-flex gap-3">
+                      <figure>
+                        <img src="./img/comilla.png" alt="">
+                      </figure>
+                      <p>Excelente app, muy sencillo de manejar y enviar dinero</p>
+                    </div>
+                    <footer class="blockquote-footer text-end pt-4 fw-bolder text-cl-primary-400">
+                      Juan De la torre
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer py-lg-5">
+      <div class="container d-flex flex-column align-items-center flex-lg-row justify-content-lg-between">
+        <figure class="mx-auto mx-lg-0 mb-4 mb-lg-0 pt-5 pt-lg-0" style="width: 200px;">
+          <img src="./img/logo-blanco.svg" alt="nucleus">
+        </figure>
+        <nav class="nav flex-column mb-5 flex-lg-row align-items-lg-center mb-lg-0">
+          <a class="nav-link text-center py-1 text-white text-color-white" aria-current="page" href="#que-es">¿Qué es?</a>
+          <a class="nav-link text-center py-1 text-white text-color-white" href="#como-funciona">¿Cómo funciona?</a>
+          <a class="nav-link text-center py-1 text-white text-color-white" href="#precios">Precios</a>
+          <a class="nav-link text-center py-1 text-white text-color-white" href="#experiencias">Experiencias</a>
+        </nav>
+      </div>
+    </footer>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
